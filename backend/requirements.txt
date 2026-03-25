@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pandas
+numpy
+joblib
+scikit-learn
+pillow
+tensorflow
+librosa
+soundfile
+python-dotenv
