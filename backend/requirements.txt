@@ -1,10 +1,10 @@
-streamlit
+streamlit==1.55.0
 pandas
 numpy
 joblib
 scikit-learn
 pillow
-tensorflow
+tensorflow==2.20.0
 librosa
 soundfile
 python-dotenv
