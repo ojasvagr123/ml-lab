@@ -13,7 +13,6 @@ FLAG_CLASS_NAMES_PATH = MODELS_DIR / "class_names.json"
 AUDIO_MODEL_PATH = MODELS_DIR / "extra_trees_chord_model.pkl"
 AUDIO_FEATURE_COLUMNS_PATH = MODELS_DIR / "final_feature_columns.pkl"
 
-# Replace this with your exact final house training columns if needed.
 HOUSE_FEATURE_COLUMNS = [
     "Suburb",
     "Type",

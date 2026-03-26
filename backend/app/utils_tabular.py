@@ -1,18 +1,21 @@
-import pandas as pd
 import math
 import pandas as pd
+
 
 def make_single_row_df(payload: dict, columns: list[str]) -> pd.DataFrame:
     row = {col: payload.get(col) for col in columns}
     return pd.DataFrame([row], columns=columns)
 
+
 def safe_predict_proba(model, df):
     if hasattr(model, "predict_proba"):
-        probs = model.predict_proba(df)
-        return probs
+        return model.predict_proba(df)
     return None
 
+
 def build_house_features(payload: dict) -> pd.DataFrame:
+    payload = payload.copy()
+
     rooms = float(payload["Rooms"])
     bathroom = float(payload["Bathroom"])
     car = float(payload["Car"])
